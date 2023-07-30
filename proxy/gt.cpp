@@ -2,9 +2,8 @@
 #include "packet.h"
 #include "server.h"
 #include "utils.h"
-#include "Pathfinder/PathFinder.h"
 
-std::string gt::version = "3.99";
+std::string gt::version = "4.33";
 std::string gt::flag = "mm";
 bool gt::resolving_uid2 = false;
 bool gt::connecting = false;
