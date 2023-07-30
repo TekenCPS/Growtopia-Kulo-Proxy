@@ -18,7 +18,6 @@
 #include "httplib.h"
 #include "player.h"
 #include "world.h"
-#include "Pathfinder/PathFinder.h"
 
 int type_delay = 250;
 int roulettex = 0;
@@ -219,7 +218,7 @@ void placeaga(int id, int posx, int posy) {
     legitpacket.vec_x = pos.m_x;
     legitpacket.vec_y = pos.m_y;
     legitpacket.flags = 2592;
-    // her þey doðruda aaqq
+    // her Ã¾ey doÃ°ruda aaqq
 
         g_server->send(false, NET_MESSAGE_GAME_PACKET, (uint8_t*)&legitpacket, sizeof(GameUpdatePacket));
     
@@ -243,7 +242,7 @@ void place_tile(int id, int posx, int posy) {
     legitpacket.vec_x = pos.m_x;
     legitpacket.vec_y = pos.m_y;
     legitpacket.flags = 2592;
-    // her þey doðruda aaqq
+    // her Ã¾ey doÃ°ruda aaqq
     if (legit)
     {
         g_server->send(false, NET_MESSAGE_GAME_PACKET, (uint8_t*)&legitpacket, sizeof(GameUpdatePacket));
